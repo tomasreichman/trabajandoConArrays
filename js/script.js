@@ -38,11 +38,11 @@ function showList(array) {
 
 let stringArray = strangeArray.filter((element) => typeof element === "string");
 
+let filterArray = stringArray.sort((a, b) => a.localeCompare(b));
+
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
 
- stringArray.sort();
-
- showList(stringArray);
+ showList(filterArray);
 });
